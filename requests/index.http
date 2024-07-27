@@ -1,0 +1,27 @@
+### Adicionar Livro
+POST http://localhost:3000/livros
+Content-Type: application/json
+
+{
+  "titulo": "O Senhor dos Anéis",
+  "autor": "J.R.R. Tolkien",
+  "anoPublicacao": 1954,
+  "descricao": "Uma obra-prima da literatura fantástica."
+}
+
+### Atualizar Livro
+PUT http://localhost:3000/livros/60d0fe4f5311236168a109ca
+Content-Type: application/json
+
+{
+  "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+  "autor": "J.R.R. Tolkien",
+  "anoPublicacao": 1954,
+  "descricao": "Primeiro livro da trilogia de O Senhor dos Anéis."
+}
+
+### Remover Livro
+DELETE http://localhost:3000/livros/66a4db05cb314e627d471f70
+
+### Listar Livros
+GET http://localhost:3000/livros
